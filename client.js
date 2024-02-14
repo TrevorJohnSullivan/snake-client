@@ -5,8 +5,8 @@ const connect = function () {
     host: "localhost",
     port: 50541,
 
- 
- 
+
+
   });
 
 
@@ -14,12 +14,9 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("you are connected YO");
-  });
-  
-  conn.on("connect", () => {
     conn.write("Name: TJS");
   });
-
+  
   return conn;
 
 };
