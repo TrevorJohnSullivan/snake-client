@@ -1,2 +1,4 @@
-const { host, port } = require('./client');
-const { stdin } = require('./input')
+const { connect } = require('./client');
+const { setupInput } = require('./input')
+
+setupInput(connect())

@@ -15,6 +15,7 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("you are connected YO");
+    conn.write("Say: hi!");
     conn.write("Name: TJS");
   });
 
@@ -23,6 +24,5 @@ const connect = function () {
 };
 
 console.log("Connecting ...");
-connect();
 
-module.exports = connect;
+module.exports = { connect }
